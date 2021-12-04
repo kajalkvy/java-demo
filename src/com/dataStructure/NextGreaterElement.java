@@ -6,7 +6,7 @@ public class NextGreaterElement {
         int newArray[]=new int[arr.length];
         for(int i=0;i< arr.length;i++){
             for(int j=i+1;j< arr.length;i++){
-//                if()
+                if()
             }
         }
     }
