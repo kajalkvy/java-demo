@@ -4,8 +4,8 @@ import java.util.Arrays;
 
 public class NextGreaterElement {
     public static void main(String[] args) {
-        int arr[] = {4, 7, 3, 4, 8, 1};
-        boolean isGreaterFound = false;
+        int[] arr = {4, 7, 3, 4, 8, 1};
+        boolean isGreaterFound;
         for (int i = 0; i < arr.length - 1; i++) {
             isGreaterFound = false;
             for (int j = i + 1; j < arr.length; j++) {
