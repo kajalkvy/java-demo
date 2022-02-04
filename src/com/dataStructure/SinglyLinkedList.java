@@ -101,7 +101,8 @@ public class SinglyLinkedList {
          while(slowPointer.next!=temp.next){
              temp = temp.next;
              slowPointer= slowPointer.next;
-         }return;
+         }
+         slowPointer.next=null;
      }
 
 */

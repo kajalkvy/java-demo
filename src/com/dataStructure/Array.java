@@ -74,7 +74,7 @@ public class Array {
     int min;
     public int minElement(int arr[]){
          min=arr[0];
-        for(int i=0;i<arr.length-1;i++) {
+        for(int i=1;i<arr.length;i++) {
             if (arr[i] < min) {
                 min = arr[i];
             }
@@ -83,7 +83,7 @@ public class Array {
     }
     public int secondMin(int arr[]){
         int secondMin=arr[arr.length-1];
-        for (int i=1;i>=0;i--){
+        for (int i=arr.length-2;i>=0;i--){
             if(arr[i]!=min&&arr[i]<secondMin){
                 secondMin=arr[i];
             }
@@ -96,7 +96,7 @@ public class Array {
         int i=0;
         int j=arr.length-1;
         int temp=0;
-       while(i< arr.length&&j>i){
+       while(i<j&&j>i){
            if(arr[i]==0&&arr[j]!=0){
                temp=arr[j];
                arr[j]=arr[i];
